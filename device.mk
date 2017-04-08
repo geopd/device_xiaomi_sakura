@@ -214,8 +214,7 @@ PRODUCT_PACKAGES += \
 # Ebtables
 PRODUCT_PACKAGES += \
     ebtables \
-    ethertypes \
-    libebtc
+    ethertypes
 
 # FM
 PRODUCT_PACKAGES += \
