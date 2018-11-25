@@ -20,6 +20,9 @@ type gx_fpd_data_file, file_type, core_data_file_type, data_file_type;
 type idc_file, file_type, vendor_file_type;
 type keylayout_file, file_type, vendor_file_type;
 
+# /proc
+type proc_last_kmsg, fs_type, proc_type;
+
 # Sensors
 type sensors_panel_prop, file_type;
 
