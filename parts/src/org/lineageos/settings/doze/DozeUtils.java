@@ -23,13 +23,13 @@ import android.content.pm.PackageManager;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.UserHandle;
+import android.support.v7.preference.PreferenceManager;
 import android.provider.Settings;
 import android.util.Log;
-import androidx.preference.PreferenceManager;
 
 import static android.provider.Settings.Secure.DOZE_ENABLED;
 
-public final class Utils {
+public final class DozeUtils {
 
     private static final String TAG = "DozeUtils";
     private static final boolean DEBUG = false;
@@ -42,7 +42,7 @@ public final class Utils {
     protected static final String GESTURE_HAND_WAVE_KEY = "gesture_hand_wave";
     protected static final String GESTURE_POCKET_KEY = "gesture_pocket";
 
-    protected static void startService(Context context) {
+    public static void startService(Context context) {
         if (DEBUG) Log.d(TAG, "Starting service");
         context.startServiceAsUser(new Intent(context, DozeService.class),
                 UserHandle.CURRENT);
@@ -73,7 +73,12 @@ public final class Utils {
         }
     }
 
-    protected static boolean isDozeEnabled(Context context) {
+    protected static boolean enableDoze(Context context, boolean enable) {
+        return Settings.Secure.putInt(context.getContentResolver(),
+                DOZE_ENABLED, enable ? 1 : 0);
+    }
+
+    public static boolean isDozeEnabled(Context context) {
         return Settings.Secure.getInt(context.getContentResolver(),
                 DOZE_ENABLED, 1) != 0;
     }
@@ -111,7 +116,7 @@ public final class Utils {
         return isGestureEnabled(context, GESTURE_POCKET_KEY);
     }
 
-    protected static boolean sensorsEnabled(Context context) {
+    public static boolean sensorsEnabled(Context context) {
         return isPickUpEnabled(context) || isHandwaveGestureEnabled(context)
                 || isPocketGestureEnabled(context);
     }
