@@ -212,6 +212,11 @@ PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
 
+# Framework detect
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect.vendor \
+    libvndfwk_detect_jni.qti.vendor
+
 # GPS
 PRODUCT_PACKAGES += \
     libwifi-hal-ctrl
