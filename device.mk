@@ -124,7 +124,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0-impl \
     android.hardware.bluetooth.a2dp@1.0-service \
-    libldacBT_dec
+    libldacBT_dec \
+    libbt-vendor \
+    libbthost_if
 
 # Camera
 PRODUCT_PACKAGES += \
