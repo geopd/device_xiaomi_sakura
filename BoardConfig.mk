@@ -199,7 +199,7 @@ VENDOR_SECURITY_PATCH := 2020-02-05
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
 # Sepolicy
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
