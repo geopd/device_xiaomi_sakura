@@ -143,6 +143,7 @@ media.stagefright.audio.sink=280 \
 media.stagefright.thumbnail.prefer_hw_codecs=true \
 vendor.mm.enable.qcom_parser=1048575 \
 mm.enable.smoothstreaming=true \
+mm.enable.sec.smoothstreaming=true \
 mmp.enable.3g2=true \
 vendor.audio.hw.aac.encoder=true \
 vendor.vidc.dec.downscalar_height=1088 \
