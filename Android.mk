@@ -45,6 +45,14 @@ $(DSP_MOUNT_POINT):
 	@echo "Creating $(DSP_MOUNT_POINT)"
 	@mkdir -p $(TARGET_OUT_VENDOR)/dsp
 
+DSP_SYMLINK := $(TARGET_OUT_VENDOR)/lib/dsp
+$(DSP_SYMLINK): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating DSP folder symlink: $@"
+	@rm -rf $@
+	$(hide) ln -sf /dsp $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(DSP_SYMLINK)
+
 IMS_LIBS := libimscamera_jni.so libimsmedia_jni.so
 
 IMS_SYMLINKS := $(addprefix $(TARGET_OUT_SYSTEM_EXT_APPS_PRIVILEGED)/ims/lib/arm64/,$(notdir $(IMS_LIBS)))
@@ -78,6 +86,18 @@ $(RFS_MSM_ADSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /vendor/firmware_mnt $@/readonly/firmware
 	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
 
+RFS_MSM_CDSP_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/msm/cdsp/
+$(RFS_MSM_CDSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating RFS MSM CDSP folder structure: $@"
+	@rm -rf $@/*
+	@mkdir -p $(dir $@)/readonly/vendor
+	$(hide) ln -sf /data/vendor/tombstones/rfs/cdsp $@/ramdumps
+	$(hide) ln -sf /mnt/vendor/persist/rfs/msm/cdsp $@/readwrite
+	$(hide) ln -sf /mnt/vendor/persist/rfs/shared $@/shared
+	$(hide) ln -sf /mnt/vendor/persist/hlos_rfs/shared $@/hlos
+	$(hide) ln -sf /vendor/firmware_mnt $@/readonly/firmware
+	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
+
 RFS_MSM_MPSS_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/msm/mpss/
 $(RFS_MSM_MPSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating RFS MSM MPSS folder structure: $@"
@@ -102,7 +122,7 @@ $(RFS_MSM_SLPI_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /vendor/firmware_mnt $@/readonly/firmware
 	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
 
-ALL_DEFAULT_INSTALLED_MODULES += $(RFS_MSM_ADSP_SYMLINKS) $(RFS_MSM_MPSS_SYMLINKS) $(RFS_MSM_SLPI_SYMLINKS)
+ALL_DEFAULT_INSTALLED_MODULES += $(RFS_MSM_ADSP_SYMLINKS) $(RFS_MSM_CDSP_SYMLINKS) $(RFS_MSM_MPSS_SYMLINKS) $(RFS_MSM_SLPI_SYMLINKS)
 
 EGL_SYMLINKS := $(TARGET_OUT_VENDOR)/lib/libGLESv2_adreno.so \
     $(TARGET_OUT_VENDOR)/lib/libEGL_adreno.so \
