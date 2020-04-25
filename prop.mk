@@ -5,7 +5,8 @@
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
 dalvik.vm.dex2oat-filter=speed \
-dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.image-dex2oat-filter=speed \
+dalvik.vm.dex2oat64.enabled=true
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
