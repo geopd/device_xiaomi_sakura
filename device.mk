@@ -407,6 +407,11 @@ PRODUCT_PACKAGES += \
     vndk_package \
     libstdc++.vendor
 
+
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-lite-vendorcompat
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
