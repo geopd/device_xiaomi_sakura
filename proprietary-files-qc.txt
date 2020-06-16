@@ -299,6 +299,11 @@ vendor/bin/slim_daemon|cbec0683e1ff1c925f58173fae3ec900c0bc279a
 vendor/bin/xtra-daemon|5356e80bcbe07d4c62e3dca93b9b4b6e3c18c264
 vendor/bin/xtwifi-client|50be56d5dfb3956ece85e9fe7abf51bf4bf1f03c
 vendor/bin/xtwifi-inet-agent|b738b9d19afff4e8c317e2dfedd3ae3668a68caa
+vendor/etc/flp.conf|8c8642685c225fa0b715c284481018a527dae451
+vendor/etc/izat.conf|5ffb094261e68246149dac5c6f564e0c3d783ad9
+vendor/etc/lowi.conf|dd73db0c1297cde822f576e4f664b645cf5fe7b8
+vendor/etc/sap.conf|afbcbacb367b2fcc05efcad76ef096d794e768ba
+vendor/etc/xtwifi.conf|ac2189707c0016c31846ccec73e8857d7f566605
 vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc|8e0b0596a13b8d653e6f5415c41d8a53bb12b73a
 vendor/lib64/hw/android.hardware.gnss@2.0-impl-qti.so|e66db4674bdf552f6a7cc07f84483ccebceeaa04
 vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so|4c97255e23e06f58f95b00840b306926bea07407
