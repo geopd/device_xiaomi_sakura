@@ -25,7 +25,7 @@ sys.listeners.registered                                      u:object_r:vendor_
 sys.post_boot.parsed                                          u:object_r:vendor_mpctl_prop:s0
 vendor.thermal.config                                         u:object_r:vendor_thermal_prop:s0
 persist.net.doxlat                                            u:object_r:vendor_xlat_prop:s0
-wifi.active.interface                                         u:object_r:exported_wifi_prop:s0
+wifi.active.interface                                         u:object_r:wifi_prop:s0
 vendor.target.init.complete                                   u:object_r:vendor_mpctl_prop:s0
 persist.vendor.mwqem.                                         u:object_r:vendor_mwqem_prop:s0
 ro.alarm_boot                                                 u:object_r:vendor_alarm_boot_prop:s0
