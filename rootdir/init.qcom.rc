@@ -627,3 +627,4 @@ service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
 
 on property:dev.bootcomplete=1
     swapon_all /vendor/etc/fstab.qcom
+    restart ril-daemon
