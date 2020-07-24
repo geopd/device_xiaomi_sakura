@@ -146,6 +146,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.postproc@1.0 \
     libdng_sdk.vendor \
+    libgui_vendor \
     Snap
 
 # Configstore

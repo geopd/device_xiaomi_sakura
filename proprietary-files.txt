@@ -19,7 +19,6 @@ vendor/lib/libcapiv2vop.so
 vendor/lib/libdualcameraddm.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libft2vendor.so
-vendor/lib/libgui_vendor.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
