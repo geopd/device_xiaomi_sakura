@@ -115,6 +115,10 @@ vendor.gralloc.enable_fb_ubwc=1
 PRODUCT_PROPERTY_OVERRIDES += \
 drm.service.enabled=true
 
+# Enable QC2 bufferqueue block-pool
+PRODUCT_PROPERTY_OVERRIDES += \
+vendor.qc2.use.bqpool=1
+
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.qfp=false
@@ -265,3 +269,4 @@ wifi.interface=wlan0
 # Zygote preforking
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 persist.device_config.runtime_native.usap_pool_enabled=true
+
