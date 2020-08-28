@@ -241,8 +241,8 @@ SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8996/media
 
 # Health HAL
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-impl \
-    android.hardware.health@2.0-service
+    android.hardware.health@2.1-impl-qti \
+    android.hardware.health@2.1-service
 
 # HIDL
 PRODUCT_PACKAGES += \
