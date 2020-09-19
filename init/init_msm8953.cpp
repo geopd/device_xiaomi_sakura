@@ -81,4 +81,8 @@ void vendor_load_properties() {
     property_override("ro.boot.verifiedbootstate", "green");
     property_override("ro.build.type", "user");
     property_override("ro.build.tags", "release-keys");
+
+    // Misc
+    property_override("ro.com.google.clientidbase", "android-xiaomi");
+    property_override("ro.com.google.clientidbase.ms", "android-xiaomi-rev1");
 }
