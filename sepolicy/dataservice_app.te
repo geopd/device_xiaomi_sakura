@@ -1,1 +1,0 @@
-allow dataservice_app radio_data_file:dir { getattr search }; 
