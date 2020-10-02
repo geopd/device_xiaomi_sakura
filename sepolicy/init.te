@@ -15,3 +15,4 @@ r_dir_file(init, vfat)
 allow init sysfs_kgsl:file { setattr };
 allow init sysfs_kgsl:lnk_file { read };
 allow init sysfs:file { setattr };
+allow init hal_usb_hwservice:hwservice_manager { find };
