@@ -386,6 +386,9 @@
     <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
     <bool translatable="false" name="config_wifi_dual_band_support">true</bool>
 
+    <!-- Whether device supports wifi ap mac randomization -->
+    <bool name="config_wifi_ap_randomization_supported">true</bool>
+
     <!-- Flag specifying whether WFC over IMS is available on device -->
     <bool name="config_device_wfc_ims_available">true</bool>
 
