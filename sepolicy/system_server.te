@@ -21,3 +21,5 @@ allow system_server goodix_fp_hwservice:hwservice_manager find;
 allow system_server exported_camera_prop:file { read open getattr };
 allow system_server userspace_reboot_config_prop:file { read open getattr };
 allow system_server userspace_reboot_exported_prop:file { read open getattr };
+
+add_service(system_server, default_android_service);
