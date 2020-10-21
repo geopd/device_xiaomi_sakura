@@ -1,1 +1,2 @@
+set_prop(dpmd, ctl_stop_prop)
 allow dpmd dpmd:capability { sys_admin };
