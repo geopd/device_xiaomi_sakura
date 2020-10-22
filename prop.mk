@@ -19,7 +19,6 @@ ro.config.vc_call_vol_steps=7 \
 persist.vendor.audio.fluence.speaker=true \
 persist.vendor.audio.fluence.voicecall=true \
 persist.vendor.audio.fluence.voicerec=false \
-persist.vendor.btstack.enable.splita2dp=false \
 ro.vendor.audio.sdk.ssr=false \
 ro.vendor.audio.sdk.fluencetype=fluence \
 vendor.audio.flac.sw.decoder.24bit=true \
@@ -44,10 +43,8 @@ vendor.voice.voip.conc.disabled=true
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-bluetooth.hfp.client=1 \
 qcom.bluetooth.soc=smd \
-ro.bluetooth.hfp.ver=1.7 \
-ro.qualcomm.bt.hci_transport=smd
+ro.bluetooth.hfp.ver=1.7
 
 # Boot
 PRODUCT_PROPERTY_OVERRIDES += \
