@@ -77,10 +77,9 @@ persist.camera.HAL3.enabled=1
 PRODUCT_PRODUCT_PROPERTIES += \
 ro.charger.enable_suspend=true
 
-# Cne/Dpm
+# Cne
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.cne.feature=1 \
-persist.vendor.dpm.feature=0
+persist.vendor.cne.feature=1
 
 # Coresight
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -109,6 +108,13 @@ vendor.display.disable_skip_validate=1 \
 vendor.display.enable_default_color_mode=1 \
 vendor.gralloc.disable_ahardware_buffer=1 \
 vendor.gralloc.enable_fb_ubwc=1
+
+# DPM
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.vendor.dpm.feature=11 \
+persist.vendor.dpm.loglevel=0 \
+persist.vendor.dpm.nsrm.bkg.evt=3955 \
+persist.vendor.dpmhalservice.enable=1
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
