@@ -1,3 +1,4 @@
+allow init adsprpcd_file:file mounton;
 allow init proc_boot_reason:file r_file_perms;
 allow init socket_device:sock_file { create setattr unlink };
 allow init hal_memtrack_default:process noatsecure;
