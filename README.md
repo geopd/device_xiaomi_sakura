@@ -21,4 +21,4 @@
 
 ## Device Picture
 
-![Xiaomi Redmi 6 Pro](https://xiaomi.world/9773-large_default/xiaomi-redmi-6-pro-4-gb-64-gb-rosso.jpg "Xiaomi Redmi 6 Pro")
+![Xiaomi Redmi 6 Pro](https://i01.appmifile.com/webfile/globalimg/7/837ABAFC-3F64-B2D6-CC34-AE70DEEA9704.png "Xiaomi Redmi 6 Pro")
