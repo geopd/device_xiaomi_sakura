@@ -339,16 +339,13 @@ PRODUCT_PACKAGES += \
     libstagefright_softomx \
     libstagefrighthw
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
-
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@1.0.vendor \
     vendor.qti.hardware.perf@2.0.vendor \
     vendor.qti.hardware.perf@2.1.vendor
 
+# Powerhint
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
