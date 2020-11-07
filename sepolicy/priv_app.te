@@ -17,3 +17,7 @@ allow priv_app proc_net:file { getattr };
 get_prop(priv_app, vendor_persist_camera_prop)
 allow priv_app camera_prop:file { read open getattr };
 binder_call(priv_app, hal_memtrack_default);
+
+# Allow Settings to read and set theme_prop
+get_prop(priv_app, theme_prop)
+set_prop(priv_app, theme_prop)
