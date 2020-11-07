@@ -12,3 +12,7 @@ allow priv_app sysfs_graphics:file { open };
 allow priv_app proc_net:file { read };
 allow priv_app proc_net:file { open };
 allow priv_app proc_net:file { getattr };
+
+# Allow Settings to read and set theme_prop
+get_prop(priv_app, theme_prop)
+set_prop(priv_app, theme_prop)

@@ -1,1 +1,5 @@
 allow platform_app sysfs_kgsl:dir search;
+
+# Allow theme_prop to be read and set by SystemUI
+get_prop(platform_app, theme_prop)
+set_prop(platform_app, theme_prop)
