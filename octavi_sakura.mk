@@ -24,9 +24,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
-# Inherit from MiuiCamera
-$(call inherit-product, vendor/MiuiCamera/config.mk)
-
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/sakura/device.mk)
 
