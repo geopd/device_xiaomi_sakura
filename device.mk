@@ -146,7 +146,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libdng_sdk.vendor \
     libgui_vendor \
-    Snap
+    CameraGo
 
 # Component overrides
 PRODUCT_COPY_FILES += \
