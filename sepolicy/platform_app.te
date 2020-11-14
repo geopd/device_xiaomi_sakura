@@ -3,3 +3,6 @@ allow platform_app sysfs_kgsl:dir search;
 # Allow theme_prop to be read and set by SystemUI
 get_prop(platform_app, theme_prop)
 set_prop(platform_app, theme_prop)
+
+#allow platform_app to read vendor_camera_prop
+get_prop(platform_app, vendor_persist_camera_prop)

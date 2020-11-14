@@ -1,6 +1,11 @@
+# Hal switch
+get_prop(system_app, camera_prop)
+set_prop(system_app, camera_prop)
+
 allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file { getattr open read };
 allow system_app wificond:binder call;
+allow system_app proc_vmallocinfo:file { open read getattr };
 
 # Allow theme_prop to be read and set by Settings
 get_prop(system_app, theme_prop)
@@ -14,3 +19,4 @@ allow system_app sysfs_battery_supply:file { getattr };
 
 # fm_radio app needes  open read write on fm_radio_device
 allow system_app fm_radio_device:chr_file r_file_perms;
+set_prop(system_app, fm_prop)

@@ -10,7 +10,11 @@ allow qti_init_shell vfat:file { getattr };
 allow qti_init_shell vfat:dir { open };
 allow qti_init_shell vfat:file { read };
 allow qti_init_shell vfat:file { open };
+allow qti_init_shell proc_dirty_ratio:file { write open };
 allow qti_init_shell qti_init_shell:capability { kill };
+allow qti_init_shell sysfs:dir { r_dir_perms setattr };
+allow qti_init_shell sysfs:file { getattr setattr };
+allow qti_init_shell sysfs_kgsl:file { setattr write };
 
 r_dir_file(qti_init_shell, vfat)
 allow qti_init_shell system_data_file:dir { write };
@@ -20,6 +24,7 @@ allow qti_init_shell system_data_file:dir { open };
 allow qti_init_shell system_data_file:file { getattr };
 allow qti_init_shell system_data_file:dir { remove_name };
 allow qti_init_shell system_data_file:dir { rmdir };
+allow qti_init_shell system_data_file:dir { setattr };
 
 allow qti_init_shell ctl_start_prop:property_service set;
 allow qti_init_shell ctl_stop_prop:property_service set;

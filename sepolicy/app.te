@@ -1,0 +1,7 @@
+# Allow appdomain to get persist_camera_prop
+get_prop(appdomain, vendor_persist_camera_prop)
+
+# Backup ability using 'adb backup'
+allow appdomain system_data_file:lnk_file r_file_perms;
+allow appdomain system_data_file:file { open setattr write };
+allow appdomain system_data_file:file { getattr read };
