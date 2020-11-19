@@ -49,6 +49,10 @@ qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7 \
 ro.qualcomm.bt.hci_transport=smd
 
+# Boot
+PRODUCT_PROPERTY_OVERRIDES += \
+sys.vendor.shutdown.waittime=500
+
 # BPF
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.kernel.ebpf.supported=true
