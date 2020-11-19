@@ -397,6 +397,10 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     move_wifi_data.sh
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    removepackages
+
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
