@@ -240,11 +240,6 @@ debug.sf.early.app.duration=16500000 \
 debug.sf.earlyGl.sf.duration=13500000 \
 debug.sf.earlyGl.app.duration=21000000
 
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.surface_flinger.supports_background_blur=1 \
-persist.sys.sf.disable_blurs=1 \
-ro.sf.blurs_are_expensive=1
-
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.timed.enable=true \
