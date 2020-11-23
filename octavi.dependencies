@@ -1,21 +1,21 @@
 [
     {
         "remote":       "github",
-        "repository":   "mahajant99/device_xiaomi_sakura",
-        "target_path":  "device/xiaomi/daisy",
-        "revision":     "lineage-17.1"
+        "repository":   "geopd/device_xiaomi_sakura",
+        "target_path":  "device/xiaomi/sakura",
+        "revision":     "Octavi-11"
     },
     {
         "remote":       "github",
-        "repository":   "mahajant99/vendor_xiaomi_sakura",
+        "repository":   "geopd/vendor_xiaomi_sakura",
         "target_path":  "vendor/xiaomi",
-        "revision":     "lineage-17.1"
+        "revision":     "lineage-18.0"
     },
     {
         "remote":       "github",
-        "repository":   "mahajant99/kernel_xiaomi_msm8953-sakura",
+        "repository":   "darkhz/revvz_sakura",
         "target_path":  "kernel/xiaomi/msm8953",
-        "revision":     "lineage-17.1"
+        "revision":     "beta-4.9-Q"
     },
     {
    "repository": "android_packages_resources_devicesettings",
