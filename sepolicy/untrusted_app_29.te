@@ -1,2 +1,2 @@
-allow untrusted_app_29 system_data_file:dir { read setattr };
-allow untrusted_app_29 system_data_file:file { append open write };
+allow untrusted_app_29 system_data_file:dir { read };
+allow untrusted_app_29 system_data_file:file { read open };

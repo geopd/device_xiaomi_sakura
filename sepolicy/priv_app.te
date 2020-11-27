@@ -19,3 +19,5 @@ set_prop(priv_app, theme_prop)
 
 #allow platform_app to read vendor_camera_prop
 get_prop(priv_app, vendor_persist_camera_prop)
+allow priv_app camera_prop:file { read open getattr };
+binder_call(priv_app, hal_memtrack_default);

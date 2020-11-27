@@ -8,6 +8,13 @@ allow system_server vendor_keylayout_file:file r_file_perms;
 allow system_server sysfs_rtc:file r_file_perms;
 allow system_server app_zygote:process getpgid;
 
+# camera
+allow system_server mm-qcamerad:binder { call };
+get_prop(system_server, camera_prop)
+
+# Allow system_server to set persist_camera_prop
+get_prop(system_server, vendor_persist_camera_prop)
+
 # fingerprint
 allow system_server goodix_fp_hwservice:hwservice_manager find;
 

@@ -3,7 +3,7 @@ typeattribute qti_init_shell data_between_core_and_vendor_violators;
 allow qti_init_shell proc_touchpanel:dir { r_dir_perms setattr };
 allow qti_init_shell proc_touchpanel:file { getattr setattr };
 allow qti_init_shell bluetooth_data_file:file r_file_perms;
-allow qti_init_shell fm_prop:property_service set;
+set_prop(qti_init_shell, fm_prop)
 allow qti_init_shell vfat:dir { search };
 allow qti_init_shell vfat:dir { read };
 allow qti_init_shell vfat:file { getattr };
@@ -26,6 +26,7 @@ allow qti_init_shell system_data_file:dir { remove_name };
 allow qti_init_shell system_data_file:dir { rmdir };
 allow qti_init_shell system_data_file:dir { setattr };
 
-allow qti_init_shell ctl_start_prop:property_service set;
-allow qti_init_shell ctl_stop_prop:property_service set;
-allow qti_init_shell system_prop:property_service set;
+set_prop(qti_init_shell, ctl_start_prop)
+set_prop(qti_init_shell, ctl_stop_prop)
+set_prop(qti_init_shell, system_prop)
+dontaudit qti_init_shell self:capability { dac_override dac_read_search };

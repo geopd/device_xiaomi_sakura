@@ -6,3 +6,8 @@ set_prop(platform_app, theme_prop)
 
 #allow platform_app to read vendor_camera_prop
 get_prop(platform_app, vendor_persist_camera_prop)
+
+get_prop(platform_app, camera_prop)
+get_prop(platform_app, vendor_default_prop)
+allow platform_app camera_prop:file { read open getattr };
+

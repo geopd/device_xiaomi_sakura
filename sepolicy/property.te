@@ -8,5 +8,3 @@ type dirac_prop, property_type;
 # Thermal engine
 type thermal_engine_prop, property_type;
 
-# Touchscreen
-type proc_touchpanel, fs_type, sysfs_type;
