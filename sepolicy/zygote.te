@@ -1,1 +1,2 @@
 allow zygote zygote:capability { kill };
+get_prop(zygote, theme_prop);
