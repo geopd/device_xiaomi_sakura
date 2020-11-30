@@ -559,6 +559,15 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
     onrestart restart audioserver
 
+# Override the AOSP sensor HAL service definition to add input group access
+service vendor.sensors-hal-1-0 /vendor/bin/hw/android.hardware.sensors@1.0-service
+    override
+    class hal
+    user system
+    group system wakelock uhid input context_hub
+    capabilities BLOCK_SUSPEND
+    rlimit rtprio 10 10
+
 on property:init.svc.vendor.ipacm-diag=running
     stop vendor.ipacm-diag
 
