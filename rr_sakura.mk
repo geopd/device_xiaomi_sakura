@@ -27,6 +27,9 @@ $(call inherit-product, device/xiaomi/sakura/device.mk)
 # Inherit some common ResurrectionRemix OS stuff.
 $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
+# Build Type
+RR_BUILDTYPE := Official
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sakura
 PRODUCT_NAME := rr_sakura
