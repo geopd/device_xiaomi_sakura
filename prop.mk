@@ -89,8 +89,10 @@ debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
 debug.hwui.renderer=skiagl \
 debug.mdpcomp.logs=0 \
+debug.sdm.support_writeback=0 \
+debug.sf.disable_backpressure=1 \
 debug.sf.enable_hwc_vds=1 \
-debug.sf.hw=1 \
+debug.sf.hw=0 \
 debug.sf.latch_unsignaled=1 \
 debug.cpurend.vsync=false \
 debug.sf.recomputecrop=0 \
@@ -106,7 +108,8 @@ ro.vendor.display.cabl=2 \
 sdm.debug.disable_skip_validate=1 \
 vendor.display.disable_skip_validate=1 \
 vendor.display.enable_default_color_mode=0 \
-vendor.gralloc.enable_fb_ubwc=1
+vendor.gralloc.enable_fb_ubwc=1 \
+vendor.video.disable.ubwc=1
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -137,7 +140,6 @@ ro.gps.agps_provider=1
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
-debug.sf.enable_hwc_vds=1 \
 debug.stagefright.omx_default_rank=0 \
 media.aac_51_output_enabled=true \
 media.msm8956hw=0 \
@@ -222,7 +224,8 @@ ro.surface_flinger.protected_contents=true \
 ro.surface_flinger.set_display_power_timer_ms=10000 \
 ro.surface_flinger.set_idle_timer_ms=9000 \
 ro.surface_flinger.set_touch_timer_ms=5000 \
-ro.surface_flinger.use_smart_90_for_video=true
+ro.surface_flinger.use_smart_90_for_video=true \
+ro.surface_flinger.set_idle_timer_ms=50 
 
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.sf.early_phase_offset_ns=11600000 \
@@ -233,9 +236,7 @@ debug.sf.phase_offset_threshold_for_next_vsync_ns=11600000
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.timed.enable=true \
-persist.vendor.delta_time.enable=true \
-persist.delta_time.enable=true
+persist.vendor.delta_time.enable=true
 
 # Tcp
 PRODUCT_PROPERTY_OVERRIDES += \
