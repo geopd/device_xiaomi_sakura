@@ -7,6 +7,7 @@ allow untrusted_app_all proc_qtaguid_stat:file { open };
 allow untrusted_app_all proc_qtaguid_stat:file { getattr };
 allow untrusted_app_all proc_zoneinfo:file { open };
 allow untrusted_app_all proc_zoneinfo:file { getattr };
+get_prop(untrusted_app_all, camera_prop)
+get_prop(untrusted_app_all, persist_camera_prop)
 
 dontaudit untrusted_app_all theme_prop:file { getattr open read map };
-

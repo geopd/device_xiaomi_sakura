@@ -11,3 +11,7 @@ allow mm-qcamerad fwk_sensor_hwservice:hwservice_manager find;
 allow mm-qcamerad vendor_camera_data_file:file { create write open getattr };
 allow mm-qcamerad vendor_camera_data_file:file { getattr };
 allow mm-qcamerad diag_device:chr_file { read write };
+get_prop(mm-qcamerad, camera_prop)
+get_prop(mm-qcamerad, persist_camera_prop)
+set_prop(mm-qcamerad, persist_camera_prop)
+
