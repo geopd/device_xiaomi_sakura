@@ -1,4 +1,3 @@
-allow untrusted_app_all theme_prop:file { getattr open read map };
 allow untrusted_app_all rootfs:dir { read };
 allow untrusted_app_all rootfs:dir { open };
 allow untrusted_app_all proc_zoneinfo:file { read };
@@ -8,3 +7,6 @@ allow untrusted_app_all proc_qtaguid_stat:file { open };
 allow untrusted_app_all proc_qtaguid_stat:file { getattr };
 allow untrusted_app_all proc_zoneinfo:file { open };
 allow untrusted_app_all proc_zoneinfo:file { getattr };
+
+dontaudit untrusted_app_all theme_prop:file { getattr open read map };
+
