@@ -344,6 +344,10 @@ PRODUCT_COPY_FILES += \
 # Properties
 -include device/xiaomi/sakura/prop.mk
 
+# Public libraries
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson
