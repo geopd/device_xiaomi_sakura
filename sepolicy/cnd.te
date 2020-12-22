@@ -1,2 +1,9 @@
 allow cnd hal_slmadapter_hwservice:hwservice_manager find;
 allow cnd wifi_prop:file { getattr open read };
+
+userdebug_or_eng(`
+  allow cnd diag_device:chr_file rw_file_perms;
+')
+
+dontaudit cnd diag_device:chr_file rw_file_perms;
+

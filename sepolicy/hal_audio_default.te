@@ -5,3 +5,11 @@ get_prop(hal_audio_default, dirac_prop)
 set_prop(hal_audio_default, dirac_prop)
 allow hal_audio_default sysfs:dir { read };
 allow hal_audio_default sysfs:dir { open };
+
+userdebug_or_eng(`
+  allow hal_audio_default diag_device:chr_file rw_file_perms;
+')
+
+dontaudit hal_audio_default diag_device:chr_file rw_file_perms;
+
+
