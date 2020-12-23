@@ -75,7 +75,7 @@ persist.vendor.camera.HAL3.enabled=1
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.charger.enable_suspend=true
+ro.charger.enable_suspend=true
 
 # Cne/Dpm
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -90,11 +90,10 @@ persist.debug.coresight.config=stm-events
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.egl.hw=0 \
 debug.enable.sglscale=1 \
-debug.gralloc.enable_fb_ubwc=1 \
 debug.hwui.renderer=skiagl \
 debug.mdpcomp.logs=0 \
 debug.sf.enable_hwc_vds=1 \
-debug.sf.hw=1 \
+debug.sf.hw=0 \
 debug.sf.latch_unsignaled=1 \
 debug.cpurend.vsync=false \
 debug.sf.recomputecrop=0 \
@@ -105,11 +104,9 @@ persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
 ro.opengles.version=196610 \
-ro.qualcomm.cabl=0 \
 ro.vendor.display.cabl=2 \
-sdm.debug.disable_skip_validate=1 \
 vendor.display.disable_skip_validate=1 \
-vendor.display.enable_default_color_mode=0 \
+vendor.display.enable_default_color_mode=1 \
 vendor.gralloc.disable_ahardware_buffer=1 \
 vendor.gralloc.enable_fb_ubwc=1
 
@@ -136,7 +133,6 @@ ro.frp.pst=/dev/block/bootdevice/by-name/config
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
-debug.sf.enable_hwc_vds=1 \
 debug.stagefright.omx_default_rank=0 \
 media.msm8956hw=0 \
 media.stagefright.audio.sink=280 \
@@ -146,12 +142,12 @@ mm.enable.smoothstreaming=true \
 mm.enable.sec.smoothstreaming=true \
 mmp.enable.3g2=true \
 vendor.audio.hw.aac.encoder=true \
+vendor.vidc.debug.level=0 \
 vendor.vidc.dec.downscalar_height=1088 \
 vendor.vidc.dec.downscalar_width=1920 \
 vendor.vidc.disable.split.mode=1 \
 vendor.vidc.enc.disable.pq=true \
 vendor.vidc.enc.disable_bframes=1 \
-vendor.video.disable.ubwc=1 \
 vendor.gralloc.enable_fb_ubwc=1 \
 vendor.video.disable.ubwc=1
 
@@ -216,20 +212,7 @@ persist.vendor.cne.logging.qxdm=3974
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-ro.surface_flinger.protected_contents=true \
-ro.surface_flinger.set_display_power_timer_ms=10000 \
-ro.surface_flinger.set_idle_timer_ms=9000 \
-ro.surface_flinger.set_touch_timer_ms=5000 \
-ro.surface_flinger.use_smart_90_for_video=true
-
-PRODUCT_PROPERTY_OVERRIDES += \
-debug.sf.use_phase_offsets_as_durations=1 \
-debug.sf.late.sf.duration=10500000 \
-debug.sf.late.app.duration=20500000 \
-debug.sf.early.sf.duration=16000000 \
-debug.sf.early.app.duration=16500000 \
-debug.sf.earlyGl.sf.duration=13500000 \
-debug.sf.earlyGl.app.duration=21000000
+ro.surface_flinger.protected_contents=true
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
