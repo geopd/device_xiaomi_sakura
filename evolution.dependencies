@@ -1,24 +1,16 @@
 [
     {
         "remote":       "github",
-        "repository":   "geopd/device_xiaomi_sakura",
-        "target_path":  "device/xiaomi/sakura",
-        "revision":     "Octavi-11"
-    },
-    {
-        "remote":       "github",
         "repository":   "geopd/vendor_xiaomi_sakura",
         "target_path":  "vendor/xiaomi",
         "revision":     "lineage-18.0"
+        "clone-depth" : "1"
     },
     {
         "remote":       "github",
         "repository":   "darkhz/revvz_sakura",
         "target_path":  "kernel/xiaomi/msm8953",
         "revision":     "beta-4.9-Q"
+        "clone-depth" : "1"
     },
-    {
-   "repository": "android_packages_resources_devicesettings",
-   "target_path": "packages/resources/devicesettings"
- }
 ]
