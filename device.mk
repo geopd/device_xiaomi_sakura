@@ -150,8 +150,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.4 \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0.vendor \
-    libdng_sdk.vendor \
-    CameraGo
+    libdng_sdk.vendor
 
 # Configstore
 PRODUCT_PACKAGES += \
