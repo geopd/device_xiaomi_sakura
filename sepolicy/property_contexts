@@ -30,9 +30,5 @@ wifi.active.interface                                         u:object_r:exporte
 # Dirac
 persist.audio.dirac.                                          u:object_r:dirac_prop:s0
 
-# Accent Picker
-persist.sys.theme.accentcolor                                 u:object_r:theme_prop:s0
-persist.sys.theme.gradientcolor                               u:object_r:theme_prop:s0
-
 # HAL3 | HAL1 Switch
 persist.camera.profile                                        u:object_r:camera_prop:s0
