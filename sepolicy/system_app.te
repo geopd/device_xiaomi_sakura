@@ -7,10 +7,6 @@ allow system_app sysfs_zram:file { getattr open read };
 allow system_app wificond:binder call;
 allow system_app proc_vmallocinfo:file { open read getattr };
 
-# Allow theme_prop to be read and set by Settings
-get_prop(system_app, theme_prop)
-set_prop(system_app, theme_prop)
-
 # Battery Health
 allow system_app sysfs_battery_supply:dir { search };
 allow system_app sysfs_battery_supply:file { read };

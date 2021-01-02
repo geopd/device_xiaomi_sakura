@@ -13,10 +13,6 @@ allow priv_app proc_net:file { read };
 allow priv_app proc_net:file { open };
 allow priv_app proc_net:file { getattr };
 
-# Allow Settings to read and set theme_prop
-get_prop(priv_app, theme_prop)
-set_prop(priv_app, theme_prop)
-
 #allow platform_app to read vendor_camera_prop
 get_prop(priv_app, vendor_persist_camera_prop)
 allow priv_app camera_prop:file { read open getattr };
