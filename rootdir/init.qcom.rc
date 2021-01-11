@@ -570,6 +570,8 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
     onrestart restart audioserver
 
+on property:init.svc.vendor.ipacm-diag=running
+    stop vendor.ipacm-diag
 
 on property:dev.bootcomplete=1
     swapon_all /vendor/etc/fstab.qcom
