@@ -1,4 +1,4 @@
-allow cnd hal_slmadapter_hwservice:hwservice_manager find;
+add_hwservice(cnd, vendor_hal_slmadapter_hwservice)
 allow cnd wifi_prop:file { getattr open read };
 
 get_prop(cnd, vendor_mwqem_prop)
