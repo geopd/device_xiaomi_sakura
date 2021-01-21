@@ -150,7 +150,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0-service \
     libldacBT_dec \
     libbt-vendor \
-    libbthost_if
+    libbthost_if \
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
