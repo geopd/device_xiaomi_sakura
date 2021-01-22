@@ -204,7 +204,10 @@ PRODUCT_PACKAGES += \
     libgenlock \
     libnl \
     libtinyxml \
-    vendor.display.config@1.0.vendor
+    libwfdaac \
+    vendor.display.config@1.0.vendor \
+    vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -331,6 +334,9 @@ PRODUCT_PACKAGES += \
     libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
+    libstagefright_enc_common \
+    libstagefright_omx.vendor \
+    libstagefright_softomx \
     libstagefrighthw
 
 # Power
