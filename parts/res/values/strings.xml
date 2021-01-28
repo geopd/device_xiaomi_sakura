@@ -14,7 +14,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
    <!-- HAL3 | HAL1 Switch button profiles -->
     <string name="camera_title">Camera HAL Switch</string>
     <string name="camera_pref_title">Choose a HAL</string>
@@ -24,6 +24,20 @@
 
      <!-- QS tile title -->
     <string name="camera_qs_tile_title">Camera HAL</string>
+
+    <!-- Soundcontrol settings -->
+    <string name="advanced_settings">Audio Amplification</string>
+
+    <!-- Audio amplification -->
+    <string name="headphone_gain">Headphone gain</string>
+    <string name="microphone_gain">Microphone gain</string>
+    <string name="speaker_gain">Speaker gain</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">Default</string>
+    <string name="custom_seekbar_default_value_to_set">Default value: <xliff:g id="v">%s</xliff:g>\nLong press to set</string>
+    <string name="custom_seekbar_default_value_is_set">Default value is set</string>
 
     <!-- Dirac settings -->
     <string name="dirac_title">Mi Sound Enhancer</string>
