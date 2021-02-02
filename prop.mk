@@ -86,11 +86,8 @@ persist.debug.coresight.config=stm-events
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.egl.hw=0 \
 debug.enable.sglscale=1 \
-debug.gralloc.enable_fb_ubwc=1 \
 debug.hwui.renderer=skiagl \
 debug.mdpcomp.logs=0 \
-debug.sdm.support_writeback=0 \
-debug.sf.disable_backpressure=1 \
 debug.sf.enable_hwc_vds=1 \
 debug.sf.hw=0 \
 debug.sf.latch_unsignaled=1 \
@@ -103,13 +100,11 @@ persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
 ro.opengles.version=196610 \
-ro.qualcomm.cabl=0 \
 ro.vendor.display.cabl=2 \
-sdm.debug.disable_skip_validate=1 \
 vendor.display.disable_skip_validate=1 \
-vendor.display.enable_default_color_mode=0 \
-vendor.gralloc.enable_fb_ubwc=1 \
-vendor.video.disable.ubwc=1
+vendor.display.enable_default_color_mode=1 \
+vendor.gralloc.disable_ahardware_buffer=1 \
+vendor.gralloc.enable_fb_ubwc=1
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -135,7 +130,6 @@ ro.frp.pst=/dev/block/bootdevice/by-name/config
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
 debug.stagefright.omx_default_rank=0 \
-media.aac_51_output_enabled=true \
 media.msm8956hw=0 \
 media.stagefright.audio.sink=280 \
 media.stagefright.thumbnail.prefer_hw_codecs=true \
@@ -144,12 +138,12 @@ mm.enable.smoothstreaming=true \
 mm.enable.sec.smoothstreaming=true \
 mmp.enable.3g2=true \
 vendor.audio.hw.aac.encoder=true \
+vendor.vidc.debug.level=0 \
 vendor.vidc.dec.downscalar_height=1088 \
 vendor.vidc.dec.downscalar_width=1920 \
 vendor.vidc.disable.split.mode=1 \
 vendor.vidc.enc.disable.pq=true \
 vendor.vidc.enc.disable_bframes=1 \
-vendor.video.disable.ubwc=1 \
 vendor.gralloc.enable_fb_ubwc=1 \
 vendor.video.disable.ubwc=1
 
@@ -211,22 +205,6 @@ service.qti.ims.enabled=1 \
 persist.vendor.vt.supported=1 \
 persist.vendor.sys.cnd.iwlan=1 \
 persist.vendor.cne.logging.qxdm=3974
-
-# SurfaceFlinger
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-ro.surface_flinger.protected_contents=true \
-ro.surface_flinger.set_display_power_timer_ms=10000 \
-ro.surface_flinger.set_idle_timer_ms=9000 \
-ro.surface_flinger.set_touch_timer_ms=5000 \
-ro.surface_flinger.use_smart_90_for_video=true \
-ro.surface_flinger.set_idle_timer_ms=50 
-
-PRODUCT_PROPERTY_OVERRIDES += \
-debug.sf.early_phase_offset_ns=11600000 \
-debug.sf.early_app_phase_offset_ns=11600000 \
-debug.sf.early_gl_phase_offset_ns=3000000 \
-debug.sf.early_gl_app_phase_offset_ns=15000000 \
-debug.sf.phase_offset_threshold_for_next_vsync_ns=11600000
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
