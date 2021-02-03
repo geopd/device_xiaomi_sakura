@@ -5,6 +5,9 @@ type vendor_camera_prop, property_type;
 # Dirac
 type dirac_prop, property_type;
 
+#mwqem property
+vendor_restricted_prop(vendor_mwqem_prop);
+
 # Thermal engine
 type thermal_engine_prop, property_type;
 type vendor_thermal_prop, property_type;
