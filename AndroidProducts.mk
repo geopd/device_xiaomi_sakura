@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_sakura.mk
+    $(LOCAL_DIR)/dot_sakura.mk
