@@ -92,13 +92,6 @@ static void workaround_snet_properties() {
     for (int i = 0; snet_prop_key[i]; ++i) {
         property_override(snet_prop_key[i], snet_prop_value[i]);
     }
-
-     chmod("/sys/fs/selinux/enforce", 0640);
-     chmod("/sys/fs/selinux/policy", 0440);
-
-    // Workaround SafetyNet
-    workaround_snet_properties();
-
 }
 
 std::vector<std::string> ro_props_default_source_order = {
@@ -149,6 +142,7 @@ void vendor_load_properties() {
     property_override("ro.build.description", description.c_str());
 
     load_dalvik_properties();
+    workaround_snet_properties();
 
     // Misc
     property_override("ro.apex.updatable", "false");
