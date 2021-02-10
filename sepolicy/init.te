@@ -20,3 +20,4 @@ allow init sysfs_kgsl:file { setattr };
 allow init sysfs_kgsl:lnk_file { read };
 allow init sysfs:file { setattr };
 allow init proc_last_kmsg:file { setattr };
+allow init iorapd_data_file:file getattr;
