@@ -191,7 +191,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2020-02-05
+VENDOR_SECURITY_PATCH := 2020-11-05
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
