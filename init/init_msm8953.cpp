@@ -137,7 +137,7 @@ void vendor_load_properties() {
     property_override_multifp("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "ro.bootimage.build.fingerprint", "google/redfin/redfin:11/RQ1A.210105.003/7005429:user/release-keys");
 
     // Misc
-    property_override("ro.apex.updatable", "true");
+    property_override("ro.apex.updatable", "false");
     property_override("ro.oem_unlock_supported", "0");
     property_override("ro.com.google.clientidbase", "android-xiaomi");
     property_override("ro.com.google.clientidbase.ms", "android-xiaomi-rev1");
