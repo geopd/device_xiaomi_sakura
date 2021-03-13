@@ -34,3 +34,6 @@ type debugfs_rmt, debugfs_type, fs_type;
 
 # Touchscreen
 type proc_touchpanel, fs_type, sysfs_type, proc_type;
+
+# Zram
+type proc_swappiness, proc_type, fs_type;
