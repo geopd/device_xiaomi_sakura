@@ -488,6 +488,10 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    iorapd.perfetto.enable=true \
+    iorapd.readahead.enable=true
 	
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays = true \
