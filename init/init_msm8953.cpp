@@ -19,6 +19,7 @@
 #include <string.h>
 #include <sys/sysinfo.h>
 #include <unistd.h>
+#include <vector>
 
 #include <android-base/logging.h>
 #include <android-base/properties.h>
@@ -30,6 +31,8 @@
 #include "property_service.h"
 #include "vendor_init.h"
 
+using android::base::GetProperty;
+
 void property_override(char const prop[], char const value[], bool add = true)
 {
     auto pi = (prop_info *) __system_property_find(prop);
@@ -39,14 +42,6 @@ void property_override(char const prop[], char const value[], bool add = true)
     } else if (add) {
         __system_property_add(prop, strlen(prop), value, strlen(value));
     }
-}
-
-void property_override_multifp(char const buildfp[], char const systemfp[],
-        char const bootimagefp[], char const vendorfp[], char const value[]) {
-    property_override(buildfp, value);
-    property_override(systemfp, value);
-    property_override(bootimagefp, value);
-    property_override(vendorfp, value);
 }
 
 static const char *snet_prop_key[] = {
@@ -106,6 +101,20 @@ static void workaround_snet_properties() {
 
 }
 
+std::vector<std::string> ro_props_default_source_order = {
+        "", "bootimage.", "odm.", "product.", "system.", "system_ext.", "vendor.",
+};
+
+void set_ro_build_prop(const std::string& prop, const std::string& value) {
+    for (const auto& source : ro_props_default_source_order) {
+        auto prop_name = "ro." + source + "build." + prop;
+        if (source == "")
+            property_override(prop_name.c_str(), value.c_str());
+        else
+            property_override(prop_name.c_str(), value.c_str(), false);
+    }
+};
+
 void load_dalvik_properties() {
     struct sysinfo sys;
 
@@ -130,11 +139,16 @@ void load_dalvik_properties() {
 }
 
 void vendor_load_properties() {
-    load_dalvik_properties();
+    std::string fingerprint;
+    std::string description;
 
-    // fingerprint
-    property_override("ro.build.description", "redfin-user 11 RQ1A.210105.003 7005429 release-keys");
-    property_override_multifp("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "ro.bootimage.build.fingerprint", "google/redfin/redfin:11/RQ1A.210105.003/7005429:user/release-keys");
+    fingerprint = "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys";
+    description = "tissot-user 8.0.0 OPR1.170623.026 8.1.10 release-keys";
+
+    set_ro_build_prop("fingerprint", fingerprint);
+    property_override("ro.build.description", description.c_str());
+
+    load_dalvik_properties();
 
     // Misc
     property_override("ro.apex.updatable", "false");
