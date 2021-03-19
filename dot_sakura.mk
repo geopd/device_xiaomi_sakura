@@ -33,6 +33,9 @@ $(call inherit-product, device/xiaomi/sakura/device.mk)
 # Inherit some common dotOS stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
 
+# DotOS Official
+DOT_OFFICIAL := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sakura
 PRODUCT_NAME := dot_sakura
