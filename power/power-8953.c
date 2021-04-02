@@ -60,18 +60,18 @@ const int kMaxInteractiveDuration = 5000; /* ms */
 const int kMaxLaunchDuration = 5000;      /* ms */
 
 /**
- * Returns true if the target is SDM632.
+ * Returns true if the target is SDM625.
  */
-static bool is_target_SDM632(void) {
-    static int is_SDM632 = -1;
+static bool is_target_SDM625(void) {
+    static int is_SDM625 = -1;
     int soc_id;
 
-    if (is_SDM632 >= 0) return is_SDM632;
+    if (is_SDM625 >= 0) return is_SDM625;
 
     soc_id = get_soc_id();
-    is_SDM632 = soc_id == 349 || soc_id == 350;
+    is_SDM625 = soc_id == 293 || soc_id == 304 || soc_id == 338 || soc_id == 351;
 
-    return is_SDM632;
+    return is_SDM625;
 }
 
 static int process_video_encode_hint(void* metadata) {
@@ -97,14 +97,14 @@ static int process_video_encode_hint(void* metadata) {
 
     if (video_encode_metadata.state == 1) {
         if (is_schedutil_governor(governor)) {
-            if (is_target_SDM632()) {
+            if (is_target_SDM625()) {
                 /* sample_ms = 10mS
                  * SLB for Core0 = -6
                  * SLB for Core1 = -6
                  * SLB for Core2 = -6
                  * SLB for Core3 = -6
-                 * hispeed load = 95
-                 * hispeed freq = 1036 */
+                 * hispeed load = 85
+                 * hispeed freq = 1401Mhz */
                 int resource_values[] = {CPUBW_HWMON_SAMPLE_MS,
                                          0xa,
                                          0x40c68100,
@@ -116,9 +116,9 @@ static int process_video_encode_hint(void* metadata) {
                                          0x40c68130,
                                          0xfffffffa,
                                          0x41440100,
-                                         0x5f,
+                                         0x55,
                                          0x4143c100,
-                                         0x40c};
+                                         0x579};
                 if (!video_encode_hint_sent) {
                     perform_hint_action(video_encode_metadata.hint_id, resource_values,
                                         ARRAY_SIZE(resource_values));
