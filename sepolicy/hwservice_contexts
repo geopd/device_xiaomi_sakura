@@ -4,3 +4,4 @@ vendor.goodix.hardware.fingerprint::IGoodixBiometricsFingerprint       u:object_
 com.fingerprints.extension::IFingerprintEngineering                    u:object_r:goodix_fp_hwservice:s0
 com.fingerprints.extension::IFingerprintSensorTest                     u:object_r:goodix_fp_hwservice:s0
 com.fingerprints.extension::IFingerprintNavigation                     u:object_r:goodix_fp_hwservice:s0
+vendor.qti.hardware.dsp::IDspService                                   u:object_r:vendor_hal_dspmanager_hwservice:s0

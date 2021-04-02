@@ -1,3 +1,4 @@
 type goodix_fp_hwservice, hwservice_manager_type;
 type vendor_hal_slmadapter_hwservice, hwservice_manager_type;
 type vendor_hal_mwqemadapter_hwservice, hwservice_manager_type;
+type vendor_hal_dspmanager_hwservice, hwservice_manager_type;

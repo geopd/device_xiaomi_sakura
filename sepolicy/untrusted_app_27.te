@@ -10,3 +10,5 @@ allow untrusted_app_27 proc_zoneinfo:file { getattr };
 allow untrusted_app_27 mnt_media_rw_file:dir { getattr };
 allow untrusted_app_27 exported_camera_prop:file read;
 allow untrusted_app_27 vendor_camera_prop:file read;
+# allow app to be a client of DSP HAL
+hal_client_domain(untrusted_app_27, vendor_hal_dspmanager)
