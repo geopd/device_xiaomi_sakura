@@ -61,6 +61,7 @@ media.camera.ts.monotonic=1 \
 persist.vendor.camera.display.lmax=1280x720 \
 persist.vendor.camera.display.umax=1920x1080 \
 vendor.camera.lowpower.record.enable=1 \
+vendor.camera.hal1.packagelist=com.whatsapp,com.instagram.android,com.snapchat.android,com.facebook.orca,org.telegram.messenger \
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.huaqin.factory,com.mi.AutoTest \
 vendor.camera.aux.packagelist2=com.android.systemui,com.huaqin.cameraautotest,com.huaqin.runtime \
 vendor.camera.aux.packageblacklist=com.discord \
