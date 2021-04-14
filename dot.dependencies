@@ -1,18 +1,25 @@
 [
     {
-        "remote":       "github",
-        "repository":   "geopd/vendor_xiaomi_sakura",
+        "repository":   "dotOS-Devices/proprietary_vendor_xiaomi_sakura",
         "target_path":  "vendor/xiaomi",
-        "revision":     "lineage-18.0"
+        "revision":     "dot11"
+        "remote":       "github",
     },
     {
-        "remote":       "github",
         "repository":   "darkhz/revvz_sakura",
         "target_path":  "kernel/xiaomi/msm8953",
         "revision":     "beta-4.9-Q"
+        "remote":       "github",
+    },
+        "repository":   "mvaisakh/gcc-arm64",
+        "target_path":  "prebuilts/gcc/linux-x86/aarch64/aarch64-elf",
+        "revision":     "gcc-master"
+        "remote":       "github",
     },
     {
-   "repository": "android_packages_resources_devicesettings",
-   "target_path": "packages/resources/devicesettings"
- }
+        "repository":   "geopd/vendor_custom_prebuilts",
+        "target_path":  "vendor/custom/prebuilts",
+        "revision":     "master"
+        "remote":       "github",
+    }
 ]
