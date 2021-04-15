@@ -1,8 +1,8 @@
 [
     {
-        "repository":   "dotOS-Devices/proprietary_vendor_xiaomi_sakura",
+        "repository":   "geopd/vendor_xiaomi_sakura",
         "target_path":  "vendor/xiaomi",
-        "revision":     "dot11"
+        "revision":     "lineage-18.1"
         "remote":       "github",
     },
     {

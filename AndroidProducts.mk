@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_sakura.mk
+    $(LOCAL_DIR)/p404_sakura.mk
+
+COMMON_LUNCH_CHOICES := \
+    p404_sakura-user \
+    p404_sakura-userdebug \
+    p404_sakura-eng
