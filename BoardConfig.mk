@@ -190,7 +190,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2020-11-05
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy/SEPolicy.mk
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
