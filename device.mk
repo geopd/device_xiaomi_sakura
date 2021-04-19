@@ -21,8 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    device/qcom/common \
     hardware/qcom/display \
     hardware/qcom/media \
+    vendor/qcom/common \
     vendor/qcom/opensource/audio-hal/primary-hal
 
 # Overlays
