@@ -150,6 +150,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0-impl \
     android.hardware.bluetooth.a2dp@1.0-service \
     libldacBT_dec \
+    libbluetooth_qti \
     libbt-vendor \
     libbthost_if \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
