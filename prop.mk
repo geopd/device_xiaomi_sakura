@@ -47,8 +47,14 @@ vendor.voice.voip.conc.disabled=true
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-qcom.bluetooth.soc=smd \
+vendor.qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7
+
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.vendor.bt.a2dp.aac_whitelist=false \
+persist.vendor.qcom.bluetooth.enable.splita2dp=false \
+ro.vendor.bluetooth.wipower=false \
+ro.bluetooth.library_name=libbluetooth_qti.so
 
 # Boot
 PRODUCT_PROPERTY_OVERRIDES += \
