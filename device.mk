@@ -21,7 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/qcom-caf/msm8996
+    hardware/qcom/display \
+    hardware/qcom/media \
+    vendor/qcom/opensource/audio-hal/primary-hal
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -244,11 +246,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
-
-# HALS
-SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8996/audio
-SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8996/display
-SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8996/media
 
 # Health HAL
 PRODUCT_PACKAGES += \
