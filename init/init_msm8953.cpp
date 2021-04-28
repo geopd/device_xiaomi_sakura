@@ -135,8 +135,8 @@ void vendor_load_properties() {
     std::string fingerprint;
     std::string description;
 
-    fingerprint = "google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys";
-    description = "redfin-user 11 RQ1A.210205.004 7038034 release-keys";
+    fingerprint = "google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys";
+    description = "redfin-user 11 RQ2A.210505.003 7255357 release-keys";
 
     set_ro_build_prop("fingerprint", fingerprint);
     property_override("ro.build.description", description.c_str());
