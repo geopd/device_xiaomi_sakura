@@ -3,7 +3,6 @@ allow init blkio_dev:file { create open read write };
 allow init proc_boot_reason:file r_file_perms;
 allow init proc_last_kmsg:file r_file_perms;
 allow init socket_device:sock_file { create setattr unlink };
-allow init hal_memtrack_default:process noatsecure;
 allow hal_memtrack_default sysfs_kgsl:lnk_file read;
 allow system_app sysfs_kgsl:lnk_file read;
 allow hal_fingerprint_default storage_file:lnk_file read;
