@@ -1824,18 +1824,14 @@ vendor/etc/qdcm_calib_data_hx8399c_fhdplus_video_mode_dsi_panel.xml|3b40beb86dca
 vendor/etc/qdcm_calib_data_ili7807_fhdplus_video_mode_dsi_panel.xml|83275b89ce519bc6936f69c89a0a2b5e9b423b4f
 vendor/etc/qdcm_calib_data_otm1911_fhdplus_video_mode_dsi_panel.xml|0a543e6906e444ff39181807c542170dc112769e
 
-# Fingerprint - from Sakura MIUI Pie
-lib/android.hardware.biometrics.fingerprint@2.1.so|d80e596cd45d77ab506aa7837d88939387d6cd78
-lib64/android.hardware.biometrics.fingerprint@2.1.so|218efa319401f42f3278248f65f3ebaaff575334
+# Fingerprint
 -vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk|2a809fedf392ee0fc44086164031dc323fdeccbe
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|866b83e0dce24cd3dd7d8a6ef6fec5bd02de499f
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|28e283738952bdad16ecf107ffc9bfd4ef1e8f75
 vendor/etc/permissions/com.fingerprints.extension.xml|57b5687643d60c9494bb9ee7de3f1ecc17eb0bec
 vendor/firmware/goodix_firmware.bin|cbd87b30f72e82adf87537fe93911fb2d70bce84
 vendor/framework/com.fingerprints.extension.jar|7e972c26a5b51fc13bd4eff6584d40a41c5b09c0
 vendor/lib64/com.fingerprints.extension@1.0.so|735b03c839422181b98c3d5ac7d8a73065a7c5c7
-vendor/lib64/hw/fingerprint.default.so|f11fae12565ba811f4bf055528c682922e41e0f9
-vendor/lib64/hw/gf_fingerprint.default.so|60dfaf2a31e3e0f9d9197c09a0a0268ed56720ff
+vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.fpc.default.so|f11fae12565ba811f4bf055528c682922e41e0f9
+vendor/lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.goodix.default.so|60dfaf2a31e3e0f9d9197c09a0a0268ed56720ff
 vendor/lib64/libgf_ca.so|e1198954c28992ca9f57bf6a09d3f629bf1bfff4
 vendor/lib64/libgf_hal.so|c31feb545b4c9d71e22c27499e05e8d3780bbc1a
 vendor/lib64/libgoodixfingerprintd_binder.so|1d5cd0cc9049d837b5771808a156e0b2df1e045d
