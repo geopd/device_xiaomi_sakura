@@ -47,6 +47,7 @@
         <activity
             android:name=".soundcontrol.SoundControlSettingsActivity"
             android:exported="false"
+            android:icon="@drawable/ic_soundcontrol"
             android:label="@string/advanced_settings"
             android:theme="@style/Theme.Main">
             <intent-filter>
