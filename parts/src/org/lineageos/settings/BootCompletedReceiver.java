@@ -41,8 +41,8 @@ public class BootCompletedReceiver extends BroadcastReceiver {
                 SoundControlSettings.PREF_HEADPHONE_GAIN, 4);
         SoundControlFileUtils.setValue(SoundControlSettings.HEADPHONE_GAIN_PATH, gain + " " + gain);
         SoundControlFileUtils.setValue(SoundControlSettings.MICROPHONE_GAIN_PATH, Settings.Secure.getInt(context.getContentResolver(),
-                SoundControlSettings.PREF_MICROPHONE_GAIN, 0));
+                SoundControlSettings.PREF_MICROPHONE_GAIN, 6));
         SoundControlFileUtils.setValue(SoundControlSettings.SPEAKER_GAIN_PATH, Settings.Secure.getInt(context.getContentResolver(),
-                SoundControlSettings.PREF_SPEAKER_GAIN, 0));
+                SoundControlSettings.PREF_SPEAKER_GAIN, 7));
     }
 }
