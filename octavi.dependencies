@@ -1,24 +1,46 @@
 [
-    {
-        "remote":       "github",
-        "repository":   "geopd/device_xiaomi_sakura",
-        "target_path":  "device/xiaomi/sakura",
-        "revision":     "Octavi-11"
-    },
-    {
-        "remote":       "github",
-        "repository":   "geopd/vendor_xiaomi_sakura",
-        "target_path":  "vendor/xiaomi",
-        "revision":     "lineage-18.0"
-    },
-    {
-        "remote":       "github",
-        "repository":   "darkhz/revvz_sakura",
-        "target_path":  "kernel/xiaomi/msm8953",
-        "revision":     "beta-4.9-Q"
-    },
-    {
-   "repository": "android_packages_resources_devicesettings",
-   "target_path": "packages/resources/devicesettings"
- }
+  {
+    "repository" : "kernel_xiaomi_sakura",
+    "target_path": "kernel/xiaomi/msm8953",
+    "clone-depth": "1"
+  },
+  {
+    "repository" : "vendor_xiaomi_sakura",
+    "target_path": "vendor/xiaomi",
+    "clone-depth": "1"
+  },
+  {
+    "repository" : "Jabiyeff-Project/android_hardware_qcom_audio",
+    "target_path": "hardware/qcom-caf/msm8996/audio",
+    "branch"     : "11.0",
+    "clone-depth": "1",
+    "remote"     : "github" 
+  },
+  {
+    "repository" : "Jabiyeff-Project/android_hardware_qcom_display",
+    "target_path": "hardware/qcom-caf/msm8996/display",
+    "branch"     : "11.0",
+    "clone-depth": "1",
+    "remote"     : "github"
+  },
+  {
+    "repository" : "Jabiyeff-Project/android_hardware_qcom_media",
+    "target_path": "hardware/qcom-caf/msm8996/media",
+    "branch"     : "11.0",
+    "clone-depth": "1",
+    "remote"     : "github"
+  },
+  {
+    "repository" : "mvaisakh/gcc-arm64",
+    "target_path": "prebuilts/gcc/linux-x86/aarch64/aarch64-elf",
+    "branch"     : "gcc-master",
+    "clone-depth": "1",
+    "remote"     : "github"
+  },
+  {
+    "repository" : "geopd/vendor_custom_prebuilts",
+    "target_path": "vendor/custom/prebuilts",
+    "branch"     : "master",
+    "remote"     : "github"
+  }
 ]
