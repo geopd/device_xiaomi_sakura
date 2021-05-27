@@ -378,27 +378,25 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.msm.usb.configfs.rc \
+    init.camera.rc \
     init.qcom.rc \
-    init.qcom.sh \
     init.qcom.usb.rc \
-    init.qcom.usb.sh \
-    init.target.rc \
-    ueventd.qcom.rc \
-    init.goodix.sh \
     init.recovery.qcom.rc \
     init.recovery.qcom.usb.rc \
-    init.sakura.rc
+    init.sakura.rc \
+    init.soundcontrol.rc \
+    init.target.rc \
+    ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
-    init.qcom.bt.sh \
+    init.camera.sh \
+    init.class_main.sh \
+    init.goodix.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
-    move_time_data.sh \
-    move_wifi_data.sh \
-    init.camera.rc \
-    init.camera.sh \
-    init.soundcontrol.rc
+    init.qcom.sh \
+    init.qcom.usb.sh \
+    move_wifi_data.sh
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
