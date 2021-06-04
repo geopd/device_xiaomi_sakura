@@ -500,6 +500,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays = true \
     ro.surface_flinger.max_virtual_display_dimension = 4096
 
+# Force disable blur
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.surface_flinger.supports_background_blur=0
+
 # Reduce system image size by limiting java debug info.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
