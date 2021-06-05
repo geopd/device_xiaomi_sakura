@@ -24,9 +24,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
-# Inherit some prebuilts
-$(call inherit-product, vendor/custom/prebuilts/config.mk)
-
 # Inherit from sakura device
 $(call inherit-product, device/xiaomi/sakura/device.mk)
 
