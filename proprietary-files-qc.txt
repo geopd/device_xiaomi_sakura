@@ -452,13 +452,6 @@ vendor/lib64/hw/sound_trigger.primary.msm8953.so|4af21ccf55a0db519e115e54af843d5
 vendor/lib64/vendor.qti.voiceprint@1.0.so|ab99a512c95b55c887b624b21fbc947bc6a6c999
 
 # Media - from LA.UM.9.6.2.r1-03600-89xx.0
-system_ext/lib/extractors/libmmparserextractor.so|f652313d65d5c629dd62e20e62f461f6ec926e8e
-system_ext/lib/libavenhancements.so|43c4a61eaae79d153cc8de37a7b12d8a5f166029
-system_ext/lib/libmmosal.so|8c7f0a071f84ec2ac9522bf448cb902a3ece2405
-system_ext/lib/libmmparser_lite.so|1887a3edee8404e7e92281f549478af5aaece2c0
-system_ext/lib64/libavenhancements.so|c3009929113328344daf7e5b5edb4d65d5e93893
-system_ext/lib64/libmmosal.so|ef19a38be8283c87eabe96f74bc8a71881ab1f0a
-system_ext/lib64/libmmparser_lite.so|bd6d507a5c39b4997ded630cc0005673f37763a0
 vendor/etc/seccomp_policy/mediacodec.policy|c323cdda96d0cb27cb300dd33b2c6a7aa3b1e89c
 vendor/etc/seccomp_policy/mediaextractor.policy|f8f95a8a0af0df5c9d3773a8c48b0a883eccee09
 vendor/lib/libFlacSwDec.so|7d661ac115de794bc6f6f7d20d4f93735b698c52
