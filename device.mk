@@ -92,10 +92,6 @@ PRODUCT_PACKAGES += \
     antradio_app \
     libantradio
 
-# Doze mode
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # Device-specific Settings
 PRODUCT_PACKAGES += \
     XiaomiParts
@@ -338,6 +334,13 @@ PRODUCT_PACKAGES += \
     libstagefright_omx.vendor \
     libstagefright_softomx \
     libstagefrighthw
+
+# ParanoidDoze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sensor.proximity=true
 
 # Perf
 PRODUCT_PACKAGES += \
