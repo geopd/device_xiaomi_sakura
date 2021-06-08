@@ -199,9 +199,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libgenlock \
-    libnl \
     libtinyxml \
-    libwfdaac \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor
@@ -362,7 +360,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     adreno-legacy \
     av \
     bt \
-    perf
+    perf \
+    wfd
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -484,10 +483,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
-
-# Wi-Fi Display
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.iorapd.enable=false \
