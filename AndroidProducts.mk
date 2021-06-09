@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_sakura.mk
+    $(LOCAL_DIR)/pa_sakura.mk
+
+COMMON_LUNCH_CHOICES := \
+    pa_sakura-user \
+    pa_sakura-userdebug \
+    pa_sakura-eng

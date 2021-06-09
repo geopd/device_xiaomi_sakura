@@ -1,0 +1,43 @@
+[
+  {
+    "repository" : "geopd/vendor_xiaomi_sakura",
+    "target_path": "vendor/xiaomi",
+    "branch"     : "lineage-18.1-caf",
+    "clone-depth": "1",
+    "remote"     : "github" 
+  },
+  {
+    "repository" : "geopd/revvz_sakura",
+    "target_path": "kernel/xiaomi/msm8953",
+    "branch"     : "4.9-R-caf",
+    "clone-depth": "1",
+    "remote"     : "github" 
+  },
+  {
+    "repository" : "AOSPA/android_hardware_qcom_audio",
+    "target_path": "vendor/qcom/opensource/audio-hal/primary-hal",
+    "branch"     : "ruby-89xx",
+    "clone-depth": "1",
+    "remote"     : "github" 
+  },
+  {
+    "repository" : "AOSPA/android_hardware_qcom_display",
+    "target_path": "hardware/qcom/display",
+    "branch"     : "ruby-89xx",
+    "clone-depth": "1",
+    "remote"     : "github"
+  },
+  {
+    "repository" : "AOSPA/android_hardware_qcom_media",
+    "target_path": "hardware/qcom/media",
+    "branch"     : "ruby-89xx",
+    "clone-depth": "1",
+    "remote"     : "github"
+  },
+  {
+    "repository" : "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch"     : "lineage-18.1",
+    "remote"     : "github"
+  }
+]
