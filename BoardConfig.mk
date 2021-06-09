@@ -191,7 +191,7 @@ VENDOR_SECURITY_PATCH := 2020-11-05
 
 # SELinux
 TARGET_EXCLUDE_QCOM_SEPOLICY := true
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy-legacy/SEPolicy.mk
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
