@@ -195,6 +195,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2020-11-05
 
 # SELinux
+TARGET_EXCLUDE_QCOM_SEPOLICY := true
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
 # Sepolicy
