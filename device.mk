@@ -166,9 +166,11 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6 \
     android.hardware.camera.device@3.4 \
     android.hardware.camera.device@3.5 \
+    camera.msm8953 \
     vendor.qti.hardware.camera.device@1.0 \
     libdng_sdk.vendor \
-    libgui_vendor
+    libgui_vendor \
+    libmm-qcamera
 
 # Component overrides
 PRODUCT_COPY_FILES += \

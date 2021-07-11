@@ -20,7 +20,6 @@ vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp|b780c7d8fdd350a3f7aeffaa0bcf311f5
 # Camera - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
 lib64/libseemore.so|eb3d633332755c5153ab0935c784dece0ea8c89e
 vendor/lib/libchromaflash.so|0d91cf7c1996b3dfd42a5afbdf8e450db4d9d2f7
-vendor/lib/hw/camera.msm8953.so|d2288242c3996d6185f4cfb18c4c3295472d5620
 vendor/lib/libcapiv2svacnn.so|e505e04cb4281bc6e5f2606d4ddf7c46ae151516
 vendor/lib/libcapiv2vop.so|1be48a1445375458880a28272a0538ba8364d523
 vendor/lib/libdualcameraddm.so|48662b4cfce7f8f3ae086ed1798ca34ff9bafbd5
@@ -31,15 +30,11 @@ vendor/lib/libjpegdmahw.so|c4ef5881e255c4ac60244cc20327e7ae08c5b835
 vendor/lib/libjpegehw.so|29d4691216275f03a2bd3db6531e78412c2ecba6
 vendor/lib/libmibokeh_625.so|aba585c120437fb3fc51bc974c6f59e0c0b7dc2a
 vendor/lib/libMiWatermark.so|e31654a7ed2337d5372da78b0d70bc1ee8933ff9
-vendor/lib/libmm-qcamera.so|b548d5372251c59afcba3af1d93d316b6f238bcc
 vendor/lib/libmmcamera_sonyimx135_eeprom.so|a77b5b2adb6320c490101240c81ae5a6146358e3
 vendor/lib/libmmjpeg.so|d8e50c689c362261e9197a19a3046dc4d431ce01
-vendor/lib/libmmjpeg_interface.so|a9ac47a7d212845d0a791f569b8652891ad7f851
 vendor/lib/libmmqjpegdma.so|a86c6471999fda3a1ebd41cfa32dd3b782fa5b68
 vendor/lib/libmmqjpeg_codec.so|0b5a90fb034962505324e698b6a892815a450490
-vendor/lib/libmpbase.so|431479c51fe23e1def5e8e50aea34975f19ba41a
 vendor/lib/liboptizoom.so|aca7591468c9bcaac3674a92b70508c3f5a577f9
-vendor/lib/libqomx_core.so|42465cda1b46096ec37efa32ae97abd4605fe3f8
 vendor/lib/libqomx_jpegdec.so|b54c4403f49df3b5d81c8a272f32100ad6baf0e1
 vendor/lib/libqomx_jpegenc.so|15b05c21ced55f49f919bd208912d5548aa95b62
 vendor/lib/libqomx_jpegenc_pipe.so|81e3f10426b37a157a8e28e58a08a0988652a3b7
@@ -48,10 +43,7 @@ vendor/lib/libseemore.so|47b44b72caf5744b53a1299b4a4e697317571b3a
 vendor/lib/libubifocus.so|ebdfecce402d795f7670cdeda87f6adc14eb3990
 vendor/lib/libvideoutils.so|f0bb3d1cc43cd66576696f1a77293e2a4996a5ce
 vendor/lib/libvidhance.so|92307ce9587e3bee93f5c7df1b97d695917df8a1
-vendor/lib/libXMFD_AgeGender.so|52fe8abb44c6633b6e854a1ba3dffeee51e94e61
-vendor/lib/lib_lowlight.so|4d3badf9ff8c4b0bb1e0116052bafb0cf4c9ab18
 vendor/lib/mibokeh_625_opencl.bin|a9142c25b36ecc531ed0ad595dfaa7c801be6f63
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so|c59f53db40442806c28bfd1ceada50b47abf69c4
 vendor/lib64/libcapiv2svacnn.so|87b7602b1013180a4f4ce41c811aedaa445c583f
 vendor/lib64/libcapiv2vop.so|c0e918a02e679985ef8707e11d29c563382a48b0
 vendor/lib64/libdualcameraddm.so|41f53a101ff23a93ffdd12c66d46e4525452b3b3
@@ -59,7 +51,6 @@ vendor/lib64/liboptizoom.so|3808c4c304e152856fe8332a5cb45bb4fcc7e1e2
 vendor/lib64/libseemore.so|eb3d633332755c5153ab0935c784dece0ea8c89e
 vendor/lib64/libubifocus.so|a533faedc79876045600e9d21faeb6a3edcff893
 vendor/lib64/libvideoutils.so|c34ed2c78135b8d5522205fca36fe2cc5f0a3b0b
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so|4967c199bcaf58035217a011442c46ce526338a2
 
 # Camera Actuators - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
 vendor/lib/libactuator_ad5816g.so|d3396ec0bb6e3462aa897d097b213c6c5de47765
@@ -82,12 +73,9 @@ vendor/lib/libactuator_sakura_dw9714v_ofilm.so|d21821093ea7814b9a8d735481abc84cf
 vendor/lib/libactuator_sakura_dw9714v_sunny.so|4188b0f6eed43a218f3cdff49e563e8efd584523
 
 # Camera Arcsoft - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
-vendor/lib/libarcsoft_beautyshot.so|6e27af412c6df41098905719410848c5c00202ae
-vendor/lib/libarcsoft_dualcam_refocus.so|94dccc693d4ec11f76904337eca393c61f36b2ad
 vendor/lib/libarcsoft_high_dynamic_range.so|fdc82ea4f9fcaa25a51b2c19f243db201bf576dd
 
 # Camera Bin - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
-vendor/bin/mm-qcamera-app|6f6b7f411fc5550896f6fbc26b284fd046d0a6c0
 vendor/bin/mm-qcamera-daemon|255819873e09a5c782fab15009103aeb72d61d94
 
 # Camera Chromatix - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
@@ -1713,7 +1701,6 @@ vendor/lib/libmmcamera_imx298.so|77feb94f15bbb00a531657e3b2274a7246744c71
 vendor/lib/libmmcamera_imx318.so|549856ac55f2793fe7a5703b77650715ad5863e8
 vendor/lib/libmmcamera_imx362.so|fba109e3ada25d94360b3b972c765f4affcd35aa
 vendor/lib/libmmcamera_imx378.so|5aaf52f43e4dacd85d0ace28c12ac6921f47348a
-vendor/lib/libmmcamera_interface.so|64cfc7e443f5769bb0e7ef4f0df768c7eaaf2224
 vendor/lib/libmmcamera_isp_abf40.so|406afc3362aca12e6d0328a47fa91e8503e74aa4
 vendor/lib/libmmcamera_isp_bcc40.so|36c72da7cc3b8b90632445bb9cc82f7ca447d1fd
 vendor/lib/libmmcamera_isp_be_stats44.so|a7e5febeb4754dce3473eaaed4c0f86aee529a08
@@ -1824,30 +1811,6 @@ vendor/lib64/libmmcamera2_stats_algorithm.so|f04b91fe8e49c54008362482649e9709fd6
 vendor/lib64/libmmcamera_dbg.so|af8036f5f18c62432e690147b00010f694075966
 vendor/lib64/libmmcamera_tintless_algo.so|5a4177a8cd0ae191419dfdd3060bf7b28b730432
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so|9f12e00cdc797a07c82c871e1d9a4f6758afd151
-
-# Camera HIDL - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM (HACK NEEDED)
-vendor/bin/hw/android.hardware.camera.provider@2.4-service|29ee46f14cad4468c7c33bd5d5de6d3c4f3018b4
-vendor/etc/init/android.hardware.camera.provider@2.4-service.rc|63eb05ea52fad76b796dd98209bc00c422e3cbf9
-vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so|7096f440cde362f2539d8159b5d3fdab6181c83f
-vendor/lib/android.hardware.camera.provider@2.4-external.so|7818e9b652844f94de7722ff518af907332fd023
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so|4b0048fdbd35a1332b231dead5f208b6e6afe29c
-vendor/lib/camera.device@1.0-impl.so|fa13bdaac88a6e2425b1f61e758ff925de1f6831
-vendor/lib/camera.device@3.2-impl.so|b67dceb23bc7b7579770dcb09db594a496dcde14
-vendor/lib/camera.device@3.3-impl.so|95c0ee65bd874b8dc66e579f94824eb5a5428314
-vendor/lib/camera.device@3.4-external-impl.so|482e16b9ea8f8d3d51bbcadabfde3402c9b90903
-vendor/lib/camera.device@3.4-impl.so|e74353631c4b38666fb41d95557f3e8c6288517c
-vendor/lib/camera.device@3.5-external-impl.so|f7da9999ae138f0f3ff8d7f5e3e06e1974471ca7
-vendor/lib/camera.device@3.5-impl.so|c84f8ee05be9f6b0bf41f07444dbfed91721e6c1
-vendor/lib64/android.hardware.camera.provider@2.4-external.so|fbe302ddf6e54f079b1178f5943fcf32ecb693ed
-vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so|1579f2b4a695bacdf6dff80e1129c330dd9b5a60
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so|f1a3d481099331ba4f881131c01ca14c94ddba16
-vendor/lib64/camera.device@1.0-impl.so|5bd6974b4f2f50e1295d31ee6f1836cfc4e60307
-vendor/lib64/camera.device@3.2-impl.so|6dbaadc76024b8fa11f2a8ec5ee43efbe8566991
-vendor/lib64/camera.device@3.3-impl.so|c3f2621a68d7df6d8a8bcee546ce90c55ed63bf4
-vendor/lib64/camera.device@3.4-external-impl.so|6a72fa82c00ad883a440fb13a42815348a2dd78a
-vendor/lib64/camera.device@3.4-impl.so|54f9f5f6d0bb03317628fdf4b984ac65bc83fbc7
-vendor/lib64/camera.device@3.5-external-impl.so|068261e6e09320a60469735f4ae0149bcde75aee
-vendor/lib64/camera.device@3.5-impl.so|c3f431ca6ebb78e5d77495fa02126ca8b4283138
 
 # Consumer IR - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
 vendor/lib64/hw/consumerir.default.so|391a679b915a433e1ab16806c3c92de839a9531d
