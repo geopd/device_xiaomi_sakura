@@ -1655,6 +1655,10 @@ vendor/firmware/cpp_firmware_v1_5_2.fw|58dd7f7c09dbb62bc6f334a8885064b292610675
 vendor/firmware/cpp_firmware_v1_6_0.fw|dcd3d1f904c7ee3d731f8f28b5f78f2503916ada
 vendor/firmware/cpp_firmware_v1_8_0.fw|26e2badbb4e3049243f0a176722f26879e7b87e8
 
+# Camera libts
+-vendor/lib/libts_detected_face_hal.so
+-vendor/lib/libts_face_beautify_hal.so
+
 # Camera OIS - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
 vendor/lib/libois_lc898122.so|314aeb690e6da057b4126f462562b5608f510bfe
 
