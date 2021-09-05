@@ -1824,21 +1824,17 @@ vendor/etc/qdcm_calib_data_hx8399c_fhdplus_video_mode_dsi_panel.xml|3b40beb86dca
 vendor/etc/qdcm_calib_data_ili7807_fhdplus_video_mode_dsi_panel.xml|83275b89ce519bc6936f69c89a0a2b5e9b423b4f
 vendor/etc/qdcm_calib_data_otm1911_fhdplus_video_mode_dsi_panel.xml|0a543e6906e444ff39181807c542170dc112769e
 
-# Fingerprint
--vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk|2a809fedf392ee0fc44086164031dc323fdeccbe
-vendor/etc/permissions/com.fingerprints.extension.xml|57b5687643d60c9494bb9ee7de3f1ecc17eb0bec
-vendor/firmware/goodix_firmware.bin|cbd87b30f72e82adf87537fe93911fb2d70bce84
-vendor/framework/com.fingerprints.extension.jar|7e972c26a5b51fc13bd4eff6584d40a41c5b09c0
-vendor/lib64/com.fingerprints.extension@1.0.so|735b03c839422181b98c3d5ac7d8a73065a7c5c7
-vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.fpc.default.so|f11fae12565ba811f4bf055528c682922e41e0f9
-vendor/lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.goodix.default.so|60dfaf2a31e3e0f9d9197c09a0a0268ed56720ff
-vendor/lib64/libgf_ca.so|e1198954c28992ca9f57bf6a09d3f629bf1bfff4
-vendor/lib64/libgf_hal.so|c31feb545b4c9d71e22c27499e05e8d3780bbc1a
-vendor/lib64/libgoodixfingerprintd_binder.so|1d5cd0cc9049d837b5771808a156e0b2df1e045d
-vendor/lib64/libsoftkeymaster.so|6437ed7a7a68733fdde95cc788a3354f4bbe664e
+# Fingerprint - from daisy V10.0.20.0.PDLMIXM
+etc/firmware/goodix_firmware.bin:vendor/etc/firmware/goodix_firmware.bin|cbd87b30f72e82adf87537fe93911fb2d70bce84
+vendor/lib64/libgf_ca.so|d62fecde6046483566af2104d04a69af59a8b3d8
+vendor/lib64/libgf_hal.so|965bcf9d994cdc29e3433fa74eefa8c512744bda
+vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
+vendor/framework/com.fingerprints.extension.jar|4d231542a253a8c56737bfef46a6494de2acaeb0
+vendor/lib64/com.fingerprints.extension@1.0.so|8535421abc67ffe1386aa8d7c52455c55007d3dd
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|4b3e658f52dfe31d7883f19bbeb8e05d323ba607
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so|c9d0251df63d8e34b6d70a59ad7b774c9f640fa1
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|0c5745649eac2b5478ef891a51b18b999bb45fce
+vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.fpc.default.so|978bd8d96441bc0613cbf492392b0515ce3bd088
+vendor/lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.goodix.default.so|476c220ea105a01658ba1dc11c005c48cbc79679
 
 # Fingerprint firmware - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
 vendor/firmware/fpctzapp.b00|9cf1d982037e7d06e0c2e2bd18df4400d51ed931
