@@ -17,9 +17,9 @@
 package org.lineageos.settings.camera;
 
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
+import org.lineageos.settings.MonetPreferenceActivity;
 
-public class CameraActivity extends PreferenceActivity {
+public class CameraActivity extends MonetPreferenceActivity {
 
     private static final String TAG_CAMERA = "camera";
 
