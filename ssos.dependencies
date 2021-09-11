@@ -1,13 +1,17 @@
 [
   {
-    "repository" : "android_kernel_xiaomi_sakura",
+    "repository" : "geopd/Mystique_sakura",
     "target_path": "kernel/xiaomi/msm8953",
-    "clone-depth": "1"
+    "branch"     : "4.9-R",
+    "clone-depth": "1",
+    "remote"     : "github" 
   },
   {
-    "repository" : "proprietary_vendor_xiaomi_sakura",
+    "repository" : "geopd/vendor_xiaomi_sakura",
     "target_path": "vendor/xiaomi",
-    "clone-depth": "1"
+    "branch"     : "lineage-18.1",
+    "clone-depth": "1",
+    "remote"     : "github" 
   },
   {
     "repository" : "mvaisakh/gcc-arm64",

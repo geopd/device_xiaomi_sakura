@@ -30,12 +30,12 @@ $(call inherit-product, vendor/custom/prebuilts/config.mk)
 # Inherit from sakura device
 $(call inherit-product, device/xiaomi/sakura/device.mk)
 
-# Inherit some common dotOS stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common SSOS stuff.
+$(call inherit-product, vendor/ssos/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sakura
-PRODUCT_NAME := dot_sakura
+PRODUCT_NAME := ssos_sakura
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 6 Pro
