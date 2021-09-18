@@ -53,6 +53,9 @@
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.perf@2\.2-service                                    u:object_r:hal_perf_default_exec:s0
 /vendor/lib(64)?/vendor\.qti\.hardware\.perf@2\.2\.so                                                      u:object_r:same_process_hal_file:s0
 
+# Power
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service-qti                                        u:object_r:hal_power_default_exec:s0
+
 # Rild
 /(vendor|system/vendor)/radio/qcril_database/qcril.db			                                   u:object_r:rild_file:s0
 
