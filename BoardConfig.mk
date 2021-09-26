@@ -153,9 +153,8 @@ BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 TARGET_KERNEL_CONFIG := sakura_defconfig
-TARGET_KERNEL_CLANG_COMPILE := false
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-elf-
-KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/linux-x86/aarch64/aarch64-elf/bin
+KERNEL_LLVM_SUPPORT := false
+KERNEL_GCC_TOOLCHAIN := aarch64-elf
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
