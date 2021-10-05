@@ -573,6 +573,9 @@
         <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
     </string-array>
 
+     <!-- this device supports smart charging -->
+    <bool name="config_smartChargingVisibility">true</bool>
+
     <!-- Smart charging -->
     <bool name="config_smartChargingAvailable">true</bool>
     <integer name="config_smartChargingBatteryLevel">80</integer>
