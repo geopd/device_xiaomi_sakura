@@ -118,6 +118,7 @@ void vendor_load_properties() {
     workaround_properties();
 
     // Misc
+    property_override("ro.apex.updatable", "false");
     property_override("ro.oem_unlock_supported", "0");
     property_override("ro.com.google.clientidbase", "android-xiaomi");
     property_override("ro.com.google.clientidbase.ms", "android-xiaomi-rev1");

@@ -506,8 +506,7 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.iorapd.enable=false \
-    ro.apex.updatable=false
+    ro.iorapd.enable=false
 	
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays = true \
