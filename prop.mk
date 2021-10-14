@@ -223,6 +223,11 @@ persist.vendor.vt.supported=1 \
 persist.vendor.sys.cnd.iwlan=1 \
 persist.vendor.cne.logging.qxdm=3974
 
+# Soc
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+ro.soc.manufacturer=QTI \
+ro.soc.model=MSM8953
+
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 ro.surface_flinger.protected_contents=true
