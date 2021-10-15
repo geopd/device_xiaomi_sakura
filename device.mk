@@ -337,6 +337,10 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
     libandroid_net
 
+# Network
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor
+
 # OMX
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl \
