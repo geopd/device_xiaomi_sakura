@@ -8,6 +8,10 @@ dalvik.vm.dex2oat-filter=speed \
 dalvik.vm.image-dex2oat-filter=speed \
 dalvik.vm.dex2oat64.enabled=true
 
+# Async MTE on system_server
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+arm64.memtag.process.system_server=off
+
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
 af.fast_track_multiplier=2 \
