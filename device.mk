@@ -505,9 +505,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.iorapd.enable=false
-	
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays = true \
     ro.surface_flinger.max_virtual_display_dimension = 4096
