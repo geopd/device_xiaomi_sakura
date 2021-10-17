@@ -46,7 +46,7 @@ service gx_fpd /vendor/bin/gx_fpd
      class core
      user system
      group system drmrpc
-     writepid /dev/cpuset/system-background/tasks
+     task_profiles ServiceCapacityLow
 	
 on property:sys.fp.vendor=switchf
     stop gx_fpd
