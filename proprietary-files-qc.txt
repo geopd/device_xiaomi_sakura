@@ -155,17 +155,6 @@ vendor/lib/libllvd_smore.so|740de4c339772df80858ddd9390f91ead71eadeb
 vendor/lib/libllvd_sw_tnr.so|406895e2ae614ac84a62d1758bce1810b99c5cda
 vendor/lib/libmmcamera_sw_tnr.so|59b0f350eb0cfa85399c296af14ac680ca99705e
 
-# CDSP - from LA.UM.9.6.2.r1-03600-89xx.0
-vendor/bin/cdsprpcd|a1b4c35ffdef184cc1334f3d1cf4fa56546d3621
-vendor/lib/libcdsprpc.so|6e3737f51175f0aa6f21d516cd8d4cfecb39dfb3
-vendor/lib/libcdsp_default_listener.so|1cfa233444a6e4ff9a42553dca623ff6200c8ddb
-vendor/lib/libfastrpc_utf_stub.so|9079ff65af4ffd725883f2f545a86563ebade88a
-vendor/lib/libsysmon_cdsp_skel.so|ab1138e0e1de96977cff511c2f27b4ecd537664d
-vendor/lib64/libcdsprpc.so|eed0dca0a42ff0783230e28eadaf57ee2b936b2c
-vendor/lib64/libcdsp_default_listener.so|10907139f8fe737cbffba80947082d83e1c019d8
-vendor/lib64/libfastrpc_utf_stub.so|2f11d383753eb50ebbd8791361d9d61351163f85
-vendor/lib64/libsysmon_cdsp_skel.so|e5ba4d173b0e09d736b16474ed2f57874cb91916
-
 # CNE - from LA.UM.9.6.2.r1-03600-89xx.0
 system_ext/framework/com.quicinc.cne.api-V1.1-java.jar|e71f1a060bc65eb373beb6d33158c0e2b37e2a70
 system_ext/framework/com.quicinc.cne.constants-V1.0-java.jar|e0e0bb8ed025b0682483c395de6ec42b5b3c0058
