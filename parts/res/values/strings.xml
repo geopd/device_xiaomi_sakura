@@ -41,6 +41,7 @@
     <string name="custom_seekbar_default_value_is_set">Default value is set</string>
 
     <!-- Dirac settings -->
+    <string name="dirac_enable">Enable dirac</string>
     <string name="dirac_title">Mi Sound Enhancer</string>
     <string name="dirac_summary">Optimize audio quality</string>
     <string name="dirac_headset_title">Choose headphones type</string>

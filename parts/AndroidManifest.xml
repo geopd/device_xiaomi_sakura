@@ -35,7 +35,8 @@
 
     <application
         android:label="@string/device_settings_app_name"
-        android:persistent="true">
+        android:persistent="true"
+        android:theme="@style/Theme.SubSettingsBase">
 
         <receiver android:name=".BootCompletedReceiver">
             <intent-filter android:priority="1000">
@@ -49,7 +50,7 @@
             android:exported="false"
             android:icon="@drawable/ic_soundcontrol"
             android:label="@string/advanced_settings"
-            android:theme="@style/Theme.Main">
+            android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -63,7 +64,7 @@
             android:name=".dirac.DiracActivity"
             android:icon="@drawable/ic_dirac"
             android:label="@string/dirac_title"
-            android:theme="@style/Theme.Main">
+            android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -76,7 +77,7 @@
         <activity
             android:name=".camera.CameraActivity"
             android:label="@string/camera_title"
-            android:theme="@style/Theme.Main">
+            android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
