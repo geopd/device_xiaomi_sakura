@@ -35,7 +35,8 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, Intent intent) {
-        new DiracUtils(context).onBootCompleted();
+        if (DEBUG) Log.d(TAG, "Received boot completed intent");
+        DiracUtils.initialize();
 
     int gain = Settings.Secure.getInt(context.getContentResolver(),
                 SoundControlSettings.PREF_HEADPHONE_GAIN, 4);
