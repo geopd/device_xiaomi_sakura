@@ -205,6 +205,7 @@ persist.radio.volte.dan_support=true \
 persist.sys.cust.lte_config=true \
 persist.vendor.radio.add_power_save=1 \
 persist.vendor.radio.custom_ecc=1 \
+persist.vendor.radio.enableadvancedscan=false \
 persist.vendor.radio.mt_sms_ack=30 \
 persist.vendor.radio.jbims=1 \
 persist.vendor.radio.rat_on=combine \
