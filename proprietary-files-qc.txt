@@ -580,7 +580,7 @@ vendor/lib/libqcci_legacy.so|39e27fbf8b3ed8f668ea701ac58a5d0a39513bb8
 vendor/lib/libqdi.so|3b43157ef29f847e102952ad1ec1d1e048df7f4f
 vendor/lib/libqdp.so|994639c23e2c5957331ef1f452eb8d2a5f86ede2
 vendor/lib/libqmi.so|6596ff2b0e211d489c2b0d6d2a663912daca68cb
--vendor/lib/libqmiservices.so|c4bda33c9c4a364155443734f7a8a7bdad462110
+vendor/lib/libqmiservices.so|c4bda33c9c4a364155443734f7a8a7bdad462110
 vendor/lib/libqmi_cci.so|9c26c6054a6d700dd3fd944dadb7009000c26008
 vendor/lib/libqmi_client_helper.so|0d5bb46b321cc88d23e18de1b5b7b3d36f41cc13
 vendor/lib/libqmi_client_qmux.so|bf02a589b6530e3abba6c340e50b67fadfd26708
@@ -596,7 +596,7 @@ vendor/lib64/libqcci_legacy.so|b24c65dd780018687d7bbce5a7707141b259f0e5
 vendor/lib64/libqdi.so|722207becdd5a5be8439c07f43afe65d8569ac45
 vendor/lib64/libqdp.so|76797cb4aa72d8908d30c43e51235b76d35b9bf4
 vendor/lib64/libqmi.so|f6ba6051f597a6b6329e1daa187eea3e9a517ad1
--vendor/lib64/libqmiservices.so|7b5f68211fd577f4e2ae83bba4b54d2a436a226c
+vendor/lib64/libqmiservices.so|7b5f68211fd577f4e2ae83bba4b54d2a436a226c
 vendor/lib64/libqmi_cci.so|d35ef8e2412cb7f88887035a02ac83a10ebeaf1f
 vendor/lib64/libqmi_client_helper.so|17ec4e45af869e3440385cbb91ff992f8b95ab7b
 vendor/lib64/libqmi_client_qmux.so|96cf6262f1d1f8dde06425b74991ee79acfe7dc3
@@ -875,8 +875,8 @@ vendor/bin/hw/android.hardware.drm@1.2-service.widevine|b626d9bbf7043c66c8ef903c
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|79cd54ef14d57c39c6eb448b22aa7c8569e8748d
 vendor/lib64/libwvhidl.so|4af61fdcf1186700ea7ee23c607fb9ce5fd0f0e8
 
-# Wi-Fi - from LA.UM.9.6.2.r1-03600-89xx.0
-vendor/bin/wcnss_service|6fb29e5b9beee42dce36657b63815afff5c13b1d
+# Wi-Fi - from LA.UM.9.6.3.r1-04400-89xx.0
+vendor/bin/wcnss_service|48e4a96a9de69bd83791a3b0b2134f5ab1205adc
 
 # Wi-Fi Display - from LA.UM.9.6.2.r1-03600-89xx.0
 bin/wfdservice|96a583c0efeaf90352b26c20c904ee156238b90f
