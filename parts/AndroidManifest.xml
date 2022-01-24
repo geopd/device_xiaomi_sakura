@@ -76,6 +76,7 @@
 
         <activity
             android:name=".camera.CameraActivity"
+            android:icon="@drawable/ic_hal_switcher"
             android:label="@string/camera_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
