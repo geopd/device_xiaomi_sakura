@@ -102,6 +102,7 @@ debug.hwui.renderer=skiagl \
 debug.hwui.target_cpu_time_percent=30 \
 debug.hwui.use_hint_manager=true \
 debug.mdpcomp.logs=0 \
+debug.renderengine.backend=skiaglthreaded \
 debug.sf.enable_hwc_vds=1 \
 debug.sf.hw=0 \
 debug.sf.latch_unsignaled=0 \
