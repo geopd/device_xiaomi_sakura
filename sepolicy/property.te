@@ -1,11 +1,16 @@
 # Camera read only property
-type camera_ro_prop, vendor_property_type, property_type;
-type vendor_camera_prop, vendor_property_type, property_type;
+vendor_public_prop(camera_ro_prop);
+vendor_public_prop(vendor_camera_prop);
 
 # Dirac
-type dirac_prop, vendor_property_type, property_type;
+vendor_public_prop(dirac_prop);
+
+# Fingerprint
+vendor_public_prop(vendor_fingerprint_prop);
 
 # Thermal engine
-type thermal_engine_prop, vendor_property_type, property_type;
-type vendor_thermal_prop, vendor_property_type, property_type;
+vendor_public_prop(thermal_engine_prop);
+vendor_public_prop(vendor_thermal_prop);
 
+# Wifi
+vendor_public_prop(vendor_wifi_prop);

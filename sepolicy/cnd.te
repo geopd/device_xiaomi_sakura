@@ -1,5 +1,5 @@
 add_hwservice(cnd, hal_slmadapter_hwservice)
-allow cnd wifi_prop:file { getattr open read };
+set_prop(cnd, vendor_wifi_prop);
 
 userdebug_or_eng(`
   allow cnd diag_device:chr_file rw_file_perms;

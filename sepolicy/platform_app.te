@@ -4,7 +4,6 @@ allow platform_app sysfs_kgsl:dir search;
 get_prop(platform_app, vendor_persist_camera_prop)
 
 get_prop(platform_app, camera_prop)
-get_prop(platform_app, vendor_default_prop)
 allow platform_app camera_prop:file { read open getattr };
 allow platform_app exported_camera_prop:file read;
 allow platform_app vendor_camera_prop:file read;

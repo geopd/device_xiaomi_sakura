@@ -1,8 +1,8 @@
 # Fingerprint
-persist.sys.fp.                                               u:object_r:fingerprint_prop:s0
-persist.vendor.sys.fp.                                        u:object_r:fingerprint_prop:s0
-ro.boot.fp.                                                   u:object_r:fingerprint_prop:s0
-ro.boot.fpsensor                                              u:object_r:fingerprint_prop:s0
+persist.sys.fp.                                               u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.sys.fp.                                        u:object_r:vendor_fingerprint_prop:s0
+ro.boot.fp.                                                   u:object_r:vendor_fingerprint_prop:s0
+ro.boot.fpsensor                                              u:object_r:vendor_fingerprint_prop:s0
 
 # Thermal engine
 persist.sys.thermal.                                          u:object_r:thermal_engine_prop:s0
@@ -25,7 +25,7 @@ sys.listeners.registered                                      u:object_r:vendor_
 sys.post_boot.parsed                                          u:object_r:vendor_mpctl_prop:s0
 vendor.thermal.config                                         u:object_r:vendor_thermal_prop:s0
 persist.net.doxlat                                            u:object_r:vendor_xlat_prop:s0
-wifi.active.interface                                         u:object_r:wifi_prop:s0
+wifi.active.interface                                         u:object_r:vendor_wifi_prop:s0
 vendor.target.init.complete                                   u:object_r:vendor_mpctl_prop:s0
 ro.alarm_boot                                                 u:object_r:vendor_alarm_boot_prop:s0
 
