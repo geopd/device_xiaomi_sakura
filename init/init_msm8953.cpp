@@ -108,8 +108,8 @@ void vendor_load_properties() {
     std::string fingerprint;
     std::string description;
 
-    fingerprint = "google/raven/raven:12/SQ1D.220205.003/8069835:user/release-keys";
-    description = "raven-user 12 SQ1D.220205.003 8069835 release-keys";
+    fingerprint = "google/raven/raven:12/S3B1.220218.004/8242181:user/release-keys";
+    description = "raven-user 12 S3B1.220218.004 8242181 release-keys";
 
     set_ro_build_prop("fingerprint", fingerprint);
     property_override("ro.build.description", description.c_str());
