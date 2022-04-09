@@ -1,2 +1,5 @@
 soong_namespace {
+    imports: [
+	"vendor/xiaomi/msm8953-common",
+	],
 }
