@@ -14,4 +14,8 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_sakura.mk
+    $(LOCAL_DIR)/aospa_sakura.mk
+
+COMMON_LUNCH_CHOICES := \
+    aospa_sakura-user \
+    aospa_sakura-userdebug
